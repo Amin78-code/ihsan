@@ -42,15 +42,15 @@ const JoinTeam = () => {
 
            <div className='mt-[50px] block md:hidden'>
                 <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px]'> Apply Now</h5>
-                      <form class=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]" action="" >
-                      <input class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" />
-                      <input class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" />
-                      <input class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" />
+                      <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]" action="" >
+                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" />
+                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" />
+                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" />
                       
-                      <textarea rows="4" class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " placeholder="Message">
+                      <textarea rows="4" className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " placeholder="Message">
                       </textarea>
-                      <div class=" w-full">
-                        <button type="submit" class="shadow-[0_0_30px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
+                      <div className=" w-full">
+                        <button type="submit" className="shadow-[0_0_30px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
                       </div>
                     </form>
               </div>
@@ -68,15 +68,15 @@ const JoinTeam = () => {
 
           <div className='mt-[50px] hidden md:block'>
               <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px]'> Apply Now</h5>
-                    <form class=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]" action="" >
-                    <input class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" />
-                    <input class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" />
-                    <input class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" />
+                    <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]" action="" >
+                    <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" />
+                    <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" />
+                    <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" />
                     
-                    <textarea rows="4" class=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " placeholder="Message">
+                    <textarea rows="4" className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " placeholder="Message">
                     </textarea>
-                    <div class=" w-full">
-                      <button type="submit" class="shadow-[0_0_30px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
+                    <div className=" w-full">
+                      <button type="submit" className="shadow-[0_0_30px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
                     </div>
                   </form>
             </div>
