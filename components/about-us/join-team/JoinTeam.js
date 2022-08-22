@@ -43,10 +43,9 @@ const JoinTeam = () => {
            <div className='mt-[50px] block md:hidden'>
                 <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px]'> Apply Now</h5>
                       <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]" action="" >
-                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" />
-                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" />
-                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" />
-                      
+                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" required />
+                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" required />
+                      <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" required />
                       <textarea rows="4" className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " placeholder="Message">
                       </textarea>
                       <div className=" w-full">

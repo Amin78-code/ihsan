@@ -9,6 +9,7 @@ import person6 from '../../../assets/images/about-us/person6.svg';
 import person7 from '../../../assets/images/about-us/person4.svg';
 import person8 from '../../../assets/images/about-us/person3.svg';
 import email from '../../../assets/images/icons/email.svg';
+import Link from "next/link";
 
 const coaches = [{
     profileImg: person1,
@@ -90,7 +91,7 @@ const Team = () => {
                 <div className='flex flex-col md:flex-row flex-wrap gap-x-[2.5%] gap-y-[50px] mt-[20px] md:mt-[55px] mb-[30px] md:mb-[80px]'>
                     {coaches.map((value) => {
                         return (
-                            <div key={value.profileImg} className='w-full md:w-[31.5%]'>
+                            <div key={value.profileImg} className='w-full md:w-[31.5%] overflow-hidden'>
                                 <Image src={value.profileImg} />
                                 <h3 className='fpr text-[24px] sm:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
                                     {value.name}
@@ -98,7 +99,7 @@ const Team = () => {
                                 <h4 className='fgr text-[16px] sm:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
                                 <p className='fgr text-[12px] sm:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
                                 <p className='email fgr text-[12px] sm:text-[24px] leading-[36px] text-[#555555] flex items-center'>
-                                    <div className='mr-[10px] mt-[5px] w-[20px] md:w-[auto]'><Image src={email} /></div>
+                                    <div className='mr-[10px] mt-[5px] min-w-[20px] md:min-w-[32px]'><Image src={email} /></div>
                                     {value.email}
                                 </p>
                                 <a className="fgr w-[94px] w-[181px] h-[31px] md:h-[50px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] leading-[36px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-0 md:mb-[20px] flex justify-center items-center mt-0 md:mt-[25px]">
@@ -108,11 +109,11 @@ const Team = () => {
                         )
                     })}
                 </div>
-                <h2 className='fpr text-[28px] md:text-[68px] text-[#0F2E3C] leading-[24px] md:leading-[100px]'>Religious Consultants</h2>
+                <h2 className='fpr text-[28px] md:text-[68px] text-[#0F2E3C] leading-[24px] md:leading-[100px]'>  <Link href='/religious'>Religious Consultants</Link></h2>
                 <div className='flex flex-col md:flex-row flex-wrap gap-x-[2.5%] gap-y-[50px] mt-[20px] md:mt-[55px] mb-[30px] md:mb-[80px]'>
                     {religiousConsultants.map((value) => {
                         return (
-                            <div key={value.profileImg} className='w-full md:w-[31.5%]'>
+                            <div key={value.profileImg} className='w-full md:w-[31.5%] overflow-hidden'>
                                 <Image src={value.profileImg} />
                                <h3 className='fpr text-[24px] sm:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
                                     {value.name}
@@ -120,7 +121,7 @@ const Team = () => {
                                 <h4 className='fgr text-[16px] sm:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
                                  <p className='fgr text-[12px] sm:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
                                  <p className='email fgr text-[12px] sm:text-[24px] leading-[36px] text-[#555555] flex items-center'>
-                                      <div className='mr-[10px] mt-[5px]'><Image src={email} /></div>
+                                      <div className='mr-[10px] mt-[5px] min-w-[20px] md:min-w-[32px]'><Image src={email} /></div>
                                     {value.email}
                                 </p>
                                 <a className="fgr w-[94px] w-[181px] h-[31px] md:h-[50px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] leading-[36px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-0 md:mb-[20px] flex justify-center items-center mt-0 md:mt-[25px]">

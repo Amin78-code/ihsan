@@ -16,7 +16,7 @@ const FAQ = () => {
         document.getElementById("accordion-collapse-heading-"+id).querySelector("svg").classList.remove("rotate-180");
     }
     return (
-        <section className="bg-[#fff] pt-0 md:pt-[50px] pb-[40px] md:pb-[100px]">
+        <section id='faq' className="bg-[#fff] pt-0 md:pt-[50px] pb-[40px] md:pb-[100px]">
             <div className="myContainer">
                 <h1 className='fpr text-[#0F2E3C] text-[85px] leading-[85px] text-center max-w-[700px] mx-auto hidden md:block'>Frequently asked questions</h1>
                 <div id="accordion-collapse" className="mt-0 md:mt-[80px]">

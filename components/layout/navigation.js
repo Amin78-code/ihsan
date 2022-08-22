@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import arrow from "../../assets/images/icons/arrow.svg";
-import logo from "../../assets/images/logo/logo.svg";
+// import logo from "../../assets/images/logo/logo.svg";
+import logo from "../../assets/images/logo/logo.png";
 // import navBrand from "../../assets/images/bg/navBrand.png";
 import Script from "next/script";
 import { FiInstagram } from "react-icons/fi";
@@ -53,41 +54,41 @@ export default function Navigation() {
       <div className="hidden md:block h-[50px] bg-[#fff]">
         <ul className="myContainer flex justify-end items-center h-[100%]">
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
-            <a>Careers</a>
+            <a href='#'>Careers</a>
           </li>
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
-            <a>Blog</a>
+            <a href='#'>Blog</a>
           </li>
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
-            <a>Contact</a>
+            <Link href='/contact'>Contact</Link>
           </li>
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
-            <a>Donations</a>
+            <a href='#'>Donations</a>
           </li>
           <li className="px-[0.5%] text-[24px] fgr font-[600]">
-            <a><FiInstagram /></a>
+            <a href='#'><FiInstagram /></a>
           </li>
           <li className="px-[0.5%] text-[24px] fgr font-[600]">
-            <a><FaFacebook /></a>
+            <a href='#'><FaFacebook /></a>
           </li>
         </ul>
       </div>
-      <div className="bg-[#0F2E3C] block xl:hidden">
+      <div className="bg-[#0F2E3C] block xl:hidden py-[5px]">
         <div className="myContainer flex justify-between items-center">
-        <div className="w-[244px] h-[63px] lg:h-[80px] bg-pink-400 opacity-[.4]">
-            <a href="./">
-              {/* <Image src={logo} alt="Logo" width={1500} height={500} /> */}
-            </a>
+        <div className="w-[244px] h-[63px] lg:h-[80px] bg-pink-40 0 opacity-[.4 ] pb-[1px]">
+             <Link href="/">
+              <Image src={logo} alt="Logo" width={1500} height={500} />
+           </Link>
           </div>
           <TbMenu2 className="text-[18px] sm:text-[40px] text-[#fff]" onClick={()=>openMobMenu()} />
         </div>
       </div>
       <nav id='desktop_nav' className="desktop-nav bg-[#0F2E3C] z-30 transform brown-light text-[15px] flex justify-between items-center">
         <div className="myContainer flex-col  xl:flex-row flex items-center justify-between">
-          <div className="w-[244px] h-[80px] bg-pink-400 opacity-[.4] hidden xl:block">
-            <a href="./">
-              {/* <Image src={logo} alt="Logo" width={1500} height={500} /> */}
-            </a>
+          <div className="w-[244px] h-[83px] bg-pink-40 0 opacity-[.4 ] pb-[1px] hidden xl:block">
+              <Link href="/">
+              <Image src={logo} alt="Logo" width={1500} height={500} />
+            </Link>
           </div>
           <ul className="desktop-nav-menu text-white capitalize flex-col xl:flex-row text-center xl:text-left flex gap-x-8 pb-[40px] xl:pb-0">
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
@@ -96,7 +97,7 @@ export default function Navigation() {
               </Link>
             </li>
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="/team">
+              <Link href="#">
                 <a>Our Team</a>
               </Link>
             </li>
@@ -106,17 +107,17 @@ export default function Navigation() {
               </Link>
             </li>
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="/Programs">
+              <Link href="/programs">
                 <a>Programs</a>
               </Link>
             </li>
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="/faqs">
-                <a>FAQs</a>
-              </Link>
+              {/* <Link href="/faqs"> */}
+                <a href="#faq">FAQs</a>
+              {/* </Link> */}
             </li>
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="/faqs">
+              <Link href="#">
                 <a className="bg-[#AE8B5C] text-[#fff] rounded-[50px] px-[53px] py-[22px] hover:opacity-[.8]">Get Started</a>
               </Link>
             </li>
