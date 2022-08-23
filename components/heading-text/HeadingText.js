@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const HeadingText = () => {
   return (
@@ -22,7 +22,11 @@ const HeadingText = () => {
           juxtaposition of your culture and current situation.
         </p>
         <a className="fgr block mx-auto w-[202px] h-[61px] bg-[#AE8B5C] text-[#fff] text-[24px] rounded-[50px] px-[30px] py-[13px] mt-[52px] hover:opacity-[.8]">
-          Get Started
+         
+          <Link href="#">
+             Get Started
+           </Link>
+
         </a>
       </div>
     </section>

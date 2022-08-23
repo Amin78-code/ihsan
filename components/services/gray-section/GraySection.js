@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const GraySection = () => {
     return (
         <section className="bg-[#fff] pt-0 md:pt-[50px] md:pt-[80px] pb-[20px] md:pb-0">
@@ -8,7 +10,9 @@ const GraySection = () => {
                         In addition to a wide range of personalized coaching programs, Ihsan Coaching partners with local organizations to offer robust Programs and seminar including a wide range of Islamic lectures such as choosing the right partner, raising children, and proving the existence of the Creator. Click the link below for a full list of available programs and seminars.
                     </p>
                     <a className="fgb w-[100px] md:w-[202px] h-[31px] md:h-[61px] bg-[#fff] text-[#182657] text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-[20px] flex justify-center items-center mt-[30px]  mx-auto">
+                       <Link href="#">
                         Get Started
+                         </Link>
                     </a>
                 </div>
             </div>

@@ -21,21 +21,25 @@ const Footer = () => {
               to set up an initial session that fits your schedule.
             </p>
             <div className="flex justify-center items-center gap-x-[20px]">
-              <a href='#'>
+              <a>
+                 <Link href="#">
                 <button className="fgr w-[120px] md:w-[332px] h-[28px] md:h-[79px] border-[1px] md:border-[3px] border-[#fff] flex justify-between items-center bg-[#fff] text-[12px] md:text-[24px] text-[#555555] rounded-[50px] px-[11px] md:px-[30px] py-[7px] md:py-[10px] hover:border-[#FAF7F2] hover:bg-[#0F2E3C] hover:text-[#fff] group">
                   Get started
                   <BsFillArrowRightCircleFill
                      className="text-[#555] text-[12px] md:text-[30px] group-hover:text-[#fff]"
                   />
                 </button>
+                 </Link>
               </a>
-              <a href='#'>
+              <a>
+                 <Link href="#">
                 <button className="fgr w-[120px] md:w-[332px] h-[28px] md:h-[79px] border-[1px] md:border-[3px] border-[#FAF7F2] flex justify-between items-center bg-[#0F2E3C] text-[12px] md:text-[24px] text-[#fff] rounded-[50px] px-[11px] md:px-[30px] py-[7px] md:py-[10px] hover:text-[#555555] hover:bg-[#fff] group">
                   Meet the team
                   <BsFillArrowRightCircleFill
                   className="text-[#fff] text-[12px] md:text-[30px] group-hover:text-[#555]"
                   />
                 </button>
+                 </Link>
               </a>
             </div>
           </div>
