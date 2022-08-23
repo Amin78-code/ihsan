@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import Layout from "../components/layout/layout";
 
-export default function consultation() {
+export default function Consultation() {
   const [FirstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
   const [Email, setEmail] = useState("");
