@@ -12,6 +12,7 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
       'sc1350': '1350px',
+      'sc1440': '1440px',
     },
     listStyleType: {
       none: 'none',

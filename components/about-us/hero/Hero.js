@@ -13,8 +13,8 @@ const Hero = () => {
       </div> */}
       <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#f2f2f2] opacity-[.99]'>
       </div>
-      <div className="myContainer flex flex-col-reverse md:flex-row  relative z-[1]">
-        <div className="w-full md:w-[53.5%]">
+      <div className="myContainer flex flex-col-reverse lg:flex-row  relative z-[1]">
+        <div className="w-full lg:w-[53.5%]">
           <h1 className="fpr text-[42px] md:text-[130px] 2xl:text-[150px] leading-[43px] md:leading-[120px] 2xl:leading-[150px] text-[#0F2E3C] max-w-[680px] pb-[20px]">
             About Us
           </h1>
@@ -31,8 +31,8 @@ const Hero = () => {
             By being able to relate to the struggles Muslims face in Western society and empathize through shared backgrounds and perspectives, we offer a level of specialized coaching that can’t be found from traditional therapy. All of our coaches are trained therapists with several years of experience; our coaches have graduated from accredited universities with Masters or Doctorates in Counseling, Clinical Psychology, and Social Work.
           </p>
         </div>
-        <div className='home-hero-img mt-0 md:mt-[80px] h-[100%] right-0 md:right-[-30px] before:w-[58px] md:before:w-[200px] relative before:h-[58px] md:before:h-[200px] before:bg-[#AE8B5C] before:rounded-[100px] before:right-[0] md:before:before:right-[-35px] before:bottom-0 md:before:bottom-[10px] before:absolute'>
-          <Image src={heroimg} />
+        <div className='home-hero-img mt-0 lg:mt-[80px] h-[100%] relative right-0 lg:right-[-30px] before:w-[58px] md:before:w-[200px] relative before:h-[58px] md:before:h-[200px] before:bg-[#AE8B5C] before:rounded-[100px] before:right-[0] md:before:right-[5%] lg:before:right-[-35px] before:bottom-0 md:before:bottom-[10px] before:absolute'>
+          <div className='img_contain er'><Image src={heroimg} /></div>
           </div>
       </div>
     </section>

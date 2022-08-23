@@ -46,7 +46,7 @@ export default function Programs() {
 
 
     {/* Till Death section */}
-    <section className="w-full py-[93px] bg-[#fff]">
+    <section className="w-full py-[43px] md:py-[93px] bg-[#fff]">
       <div className="myContainer">
         <div className=" w-full ">
           <h2 className="fpr text-[32px] leading-[35px] lg:leading-[46px] lg:text-[42px] 2xl:text-[52px]  text-[#0F2E3C] ">
@@ -141,15 +141,15 @@ export default function Programs() {
     {/* Image gellary  */}
     <section className="my-10 ">
       <div className="main__container  ">
-        <div className="images-slider w-[100%] mx-2 md:mx-0 flex gap-x-2 md:gap-x-4  ">
+        <div className="images-slider w-[100%] mx- 2 md:mx- 0 flex justify-between gap-x-[2%] md:gap-x-[2%] px-0">
           {/* <Slider {...settings2} > */}
-            <div className=" w-[28%] image_container flex justify-center items-center bg-[#1826570D] ">
+            <div className=" w-[30%] image_container flex justify-center items-center bg-[#1826570D] ">
               <Image className="" src={Image1} alt="Program1"  />
             </div>
             <div className=" w-[35%] image_container flex justify-center items-center bg-[#1826570D] ">
               <Image className="" src={Image2} alt="Program2"  />
             </div>
-            <div className=" w-[28%] image_container flex justify-center items-center bg-[#1826570D] ">
+            <div className=" w-[30%] image_container flex justify-center items-center bg-[#1826570D] ">
               <Image src={Image3} alt="Program3"  />
             </div>
               

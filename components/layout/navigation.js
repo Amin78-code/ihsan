@@ -75,7 +75,7 @@ export default function Navigation() {
       </div>
       <div className="bg-[#0F2E3C] block xl:hidden py-[5px]">
         <div className="myContainer flex justify-between items-center">
-        <div className="w-[244px] h-[63px] lg:h-[80px] bg-pink-40 0 opacity-[.4 ] pb-[1px]">
+        <div className="w-[135px] sm:w-[175px] lg:w-[244px] h-[48px] sm:h-[63px] lg:h-[80px] bg-pink-40 0 opacity-[.4 ] pb-[1px]">
              <Link href="/">
               <Image src={logo} alt="Logo" width={1500} height={500} />
            </Link>

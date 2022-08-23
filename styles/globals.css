@@ -276,6 +276,9 @@ justify-content: center;
     object-fit: cover;
     object-position: top;
   } */
+  ul.list-square li::marker {
+    font-size: 20px;
+  }
 }
 @media (min-width: 641px) and (max-width: 768px) {
   .myContainer {

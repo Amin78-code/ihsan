@@ -9,6 +9,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BrownSection from "../components/individual/brown-section/BrownSection";
 
+const hero = {
+  title: 'Individual coaching',
+  paragraph1: " Our one-on-one coaching services can help you build self-confidence, improve your relationships, support your career ambitions, or help you achieve your goals.",
+}
 const imgText1 = {
   img: hands,
   title: 'Individual coaching',
@@ -36,7 +40,7 @@ const imgText4 = {
 export default function HomePage() {
   return (
     <Layout>
-      <Hero />
+      <Hero data={hero} />
       <Content data={imgText1} />
       <BrownSection />
     </Layout>

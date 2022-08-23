@@ -6,43 +6,43 @@ import hands from '../../../assets/images/services/hands.svg';
 
 const Content = ({ data, pb }) => {
   return (
-    <section className={`w-full pt-[100px] pb-[70px] bg-[#fff] relative ${pb ? "pb-[300px]" : ""}`}>
+    <section className={`w-full pt-[40px] md:pt-[100px] pb-[30px] md:pb-[70px] bg-[#fff] relativ e ${pb ? "pb-[300px]" : ""}`}>
       <div className="myContainer  ">
-        <p className="text-[24px] leading-[36px] text-[#555555] pb-[40px]">
+      <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#555555] pb-[20px] md:pb-[40px]">
           Ihsan Coaching’s premarital coaching services are designed for individuals or couples considering or are on the path towards a Nikah.
         </p>
-        <p className="text-[24px] leading-[36px] text-[#555555] pb-[40px]">
+        <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#555555] pb-[20px] md:pb-[40px]">
           Our premarital coaching program consists of five sessions that assess your compatibility, while we explore a wide range of topics and get a better grasp of the ideal Islamic marriage. Topics during these sessions can include discussions on marital attraction and preparation, expectations and assumptions regarding marriage, healthy communication skills, conflict resolutions, financial and paternal responsibilities, and tools to balance work and life.
         </p>
 
-        <div className='myContainer flex flex-wrap gap-x-[4%] gap-y-[30px] pt-[4.5%] pb-[4%]'>
+        <div className='myContainer flex flex-wrap flex-col lg:flex-row gap-x-0 xl:gap-x-[4%] gap-y-[20px] xl:gap-y-[30px] pt-[4.5%] pb-[10%] lg:pb-[4%]'>
           {data.sessions.map((value) => {
             return (
-              <div key={value.text} className="h-[431px] bg-[#0F2E3C] border-[#707070] border-[1px] rounded-[30px] w-[48%] px-[72px] py-[54px]">
-                <h4 className="fpr text-[42px] text-[#fff] ">{value.title}</h4>
-                <p className="fgr text-[24px] leading-[36px] text-[#fff] mt-[5%]">{value.text}</p>
+              <div key={value.text} className="h-[auto] sc1350:h-[431px] bg-[#0F2E3C] border-[#707070] border-[1px] rounded-[15px] md:rounded-[30px] w-full lg:w-[48%] px-[20px] md:px-[72px] py-[20px] md:py-[54px]">
+                <h4 className="fpr text-[28px] md:text-[42px] text-[#fff] ">{value.title}</h4>
+                <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] mt-[2%] md:mt-[5%]">{value.text}</p>
               </div>
             )
           })}
 
         </div>
       </div>
-      <div className="myContainer flex justify-end pt-[3.7%] pb-[16%]">
+      <div className="myContainer flex flex-col xl:flex-row justify-end relative pt-[3.7%] pb-[8%]">
 
-        <div className='absolute left-0'>
-          <div className='max-w-[600px] 2xl:max-w-[100%] left-0 after:w-[337px] relative after:h-[200px] after:bg-[#0F2E3C] after:rounded-bl-[100px] after:right-[50px] after:bottom-[-25px] after:absolute after:z-[-1] z-[2]
-        before:w-[337px] relative before:h-[200px] before:bg-[#0F2E3C] before:rounded-tr-[100px] before:left-[0] before:top-[-60px] before:absolute
+        <div className='absolute left-0 top-[5%] xl:top-[unset] max-w-[85%] sm:max-w-[90%] md:max-w-[100%] xl:max-w-[46%]'>
+        <div className='max-w-[100%] left-0 after:w-[150px] md:after:w-[337px] relative after:h-[100px] md:after:h-[200px] after:bg-[#0F2E3C] after:rounded-bl-[100px] after:right-[50px] after:bottom-[-25px] after:absolute after:z-[-1] z-[2]
+        before:w-[150px] md:before:w-[337px] relative before:h-[100px] md:before:h-[200px] before:bg-[#0F2E3C] before:rounded-tr-[100px] before:left-[0] before:top-[-30px] sm:before:top-[-60px] before:absolute
         '><Image src={data.img} />
           </div>
         </div>
-        <div className="w-[55%] pt-[5%]">
-          <h6 className="fgb text-[28px] leading-[36px] text-[#555555]">
-            {data.title}
+        <div className="w-full xl:w-[50%] pt-[97%] md:pt-[680px] xl:pt-0">
+          <h6 className="fgb text-[18px] md:text-[28px] leading-[18px] md:leading-[36px] text-[#555555]">
+           {data.title}
           </h6>
-          <p className="text-[24px] leading-[36px] text-[#555555] pt-[35px]">
-            {data.paragraph1}
+          <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#555555] pt-[15px] md:pt-[35px]">
+             {data.paragraph1}
           </p>
-          <p className="text-[24px] leading-[36px] text-[#555555] pt-[35px]">
+          <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#555555] pt-[15px] md:pt-[35px] pb-0md:pb-[35px]">
             {data.paragraph2}
           </p>
         </div>

@@ -21,11 +21,11 @@ const DarkSection = () => {
 
       <div className="myContainer relative z-[2]">
         <div className="px-0 md:px-[5%]">
-          <div className="flex flex-col md:flex-row">
-            <h2 className="fpr text-[32px] text-[70px] text-[#fff] leading-[32px] md:leading-[70px] min-w-[100%] md:min-w-[450px]">
+          <div className="flex flex-col lg:flex-row">
+            <h2 className="fpr text-[32px] md:text-[70px] text-[#fff] leading-[32px] md:leading-[70px] min-w-[100%] md:min-w-[450px]">
               What makes us different?
             </h2>
-            <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] pl-0 md:pl-[5%] pt-[16px] md:pt-0">
+            <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] pl-0 lg:pl-[5%] pt-[16px] lg:pt-0">
               Coaching is another form of support for people that feel stuck in
               life, but don’t have a clinical illness. And Unlike traditional
               therapy, coaching is a more direct, goal-oriented approach to mental
@@ -36,9 +36,9 @@ const DarkSection = () => {
               we can get you feeling you again, faster.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row pt-[60px] pb-[50px] md:py-[130px] items-center md:items-end">
+          <div className="flex flex-col lg:flex-row pt-[60px] pb-[50px] md:py-[130px] items-center lg:items-end">
             <div className="flex">
-              <div className="mr-[20px] w-[52px] md:w-[auto] h-[53px] md:w-[auto]">
+              <div className="mr-[20px]   sc1440:w-[auto] w-[52px] md:w-[150px] h-[53px] md:w-[auto]">
                 <Image src={bulb} alt="image" />
               </div>
               <div>
@@ -58,11 +58,11 @@ const DarkSection = () => {
                 </ul>
               </div>
             </div>
-            <p className="fpr text-[18px] md:text-[24px] text-[#fff] py-[5px] leading-[28px] px-[7%] mt-0 md:mt-[-30px]">
+            <p className="fpr text-[18px] md:text-[24px] text-[#fff] py-[5px] leading-[28px] px-[4%] sc1440:px-[7%] mt-0 lg:mt-[-30px]">
               vs
             </p>
             <div className="flex">
-              <div className="mr-[20px] w-[37px] md:w-[auto] h-[69px] md:w-[auto]">
+              <div className="mr-[20px] sc1440:w-[auto] w-[37px] md:w-[90px] h-[69px] md:w-[auto]">
                 <Image src={clipboard} alt="image" />
               </div>
               <div>

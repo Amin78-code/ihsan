@@ -76,11 +76,11 @@ const Team = () => {
     return (
         <section className='pb-[20px] md:pb-[50px]'>
             <div className="min-h-[auto] md:min-h-[620px] flex items-center relative">
-                <div className='absolute z-[-1] top-0'>
+                <div className='absolute z-[-1] top-0 w-full lg:w-[48%]'>
                     <Image src={meeting} />
                 </div>
                 <div className='myContainer flex justify-end items-end'>
-                    <div className='w-full md:w-[50%] pl-0 md:pl-[3.5%] pr-0 md:pr-[3%]   pt-[280px] md:pt-0'>
+                    <div className='w-full lg:w-[50%] pl-0 lg:pl-[3.5%] pr-0 lg:pr-[3%]   pt-[80%] sm:pt-[75%] lg:pt-[280px] lg:pt-0'>
                         <h2 className='fpr text-[32px] md:text-[100px] text-[#0F2E3C] leading-[32px] md:leading-[100px]'>Meet the team</h2>
                         <p className='fgr text-[12px] md:text-[24px] text-[#555] leading-[16px] md:leading-[36px] mt-[10px] md:mt-[32px]'> Our secret to success is an exceptional and diverse team, all of whom come from diverse and unique backgrounds. Our coaches are licensed therapists with extensive experience offering culturally and spiritually responsive services.</p>
                     </div>
@@ -92,15 +92,15 @@ const Team = () => {
                     {coaches.map((value) => {
                         return (
                             <div key={value.profileImg} className='w-full md:w-[31.5%] overflow-hidden'>
-                                <Image src={value.profileImg} />
-                                <h3 className='fpr text-[24px] sm:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
+                                <div className='w-full img_container'><Image src={value.profileImg} /></div>
+                                <h3 className='fpr text-[24px] md:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
                                     {value.name}
                                 </h3>
-                                <h4 className='fgr text-[16px] sm:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
-                                <p className='fgr text-[12px] sm:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
-                                <p className='email fgr text-[12px] sm:text-[24px] leading-[36px] text-[#555555] flex items-center'>
+                                <h4 className='fgr text-[16px] md:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
+                                <p className='fgr text-[12px] md:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
+                                <p className='email fgr text-[12px] md:text-[24px] leading-[36px] text-[#555555] flex items-center'>
                                     <div className='mr-[10px] mt-[5px] min-w-[20px] md:min-w-[32px]'><Image src={email} /></div>
-                                    {value.email}
+                                    <span className='text-ellipsis overflow-hidden'>{value.email}</span>
                                 </p>
                                 <a className="fgr w-[94px] w-[181px] h-[31px] md:h-[50px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] leading-[36px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-0 md:mb-[20px] flex justify-center items-center mt-0 md:mt-[25px]">
                                     View profile
@@ -114,15 +114,15 @@ const Team = () => {
                     {religiousConsultants.map((value) => {
                         return (
                             <div key={value.profileImg} className='w-full md:w-[31.5%] overflow-hidden'>
-                                <Image src={value.profileImg} />
-                               <h3 className='fpr text-[24px] sm:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
+                                <div className='w-full img_container'> <Image src={value.profileImg} /></div>
+                                <h3 className='fpr text-[24px] md:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
                                     {value.name}
                                 </h3>
-                                <h4 className='fgr text-[16px] sm:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
-                                 <p className='fgr text-[12px] sm:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
-                                 <p className='email fgr text-[12px] sm:text-[24px] leading-[36px] text-[#555555] flex items-center'>
-                                      <div className='mr-[10px] mt-[5px] min-w-[20px] md:min-w-[32px]'><Image src={email} /></div>
-                                    {value.email}
+                                <h4 className='fgr text-[16px] md:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
+                                <p className='fgr text-[12px] md:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
+                                <p className='email fgr text-[12px] md:text-[24px] leading-[36px] text-[#555555] flex items-center'>
+                                    <div className='mr-[10px] mt-[5px] min-w-[20px] md:min-w-[32px]'><Image src={email} /></div>
+                                    <span className='text-ellipsis overflow-hidden'>{value.email}</span>
                                 </p>
                                 <a className="fgr w-[94px] w-[181px] h-[31px] md:h-[50px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] leading-[36px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-0 md:mb-[20px] flex justify-center items-center mt-0 md:mt-[25px]">
                                     View profile
