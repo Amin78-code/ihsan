@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
+import email from '../../../assets/images/icons/email.svg';
 import meeting from '../../../assets/images/about-us/meeting.svg';
 import person1 from '../../../assets/images/about-us/person1.svg';
 import person2 from '../../../assets/images/about-us/person2.svg';
@@ -8,8 +10,6 @@ import person5 from '../../../assets/images/about-us/person5.svg';
 import person6 from '../../../assets/images/about-us/person6.svg';
 import person7 from '../../../assets/images/about-us/person4.svg';
 import person8 from '../../../assets/images/about-us/person3.svg';
-import email from '../../../assets/images/icons/email.svg';
-import Link from "next/link";
 
 const coaches = [{
     profileImg: person1,

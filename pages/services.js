@@ -1,17 +1,17 @@
 import Link from "next/link";
-import DarkSection from "../components/home/dark-section/DarkSection";
-import GraySection from "../components/services/gray-section/GraySection";
-import FAQ from "../components/home/faq/FAQ";
-import HeadingText from "../components/home/heading-text/HeadingText";
-import Hero from "../components/services/hero/Hero";
-import ImgText from "../components/services/img-text/ImgText";
-import Layout from "../components/layout/layout";
 import "slick-carousel/slick/slick.css";
+import FAQ from "../components/home/faq/FAQ";
 import "slick-carousel/slick/slick-theme.css";
+import Layout from "../components/layout/layout";
+import Hero from "../components/services/hero/Hero";
 import hands from '../assets/images/services/hands.svg';
-import engagement from '../assets/images/services/engagement.svg';
-import couple from '../assets/images/services/couple.svg';
 import Quran from '../assets/images/services/Quran.svg';
+import couple from '../assets/images/services/couple.svg';
+import ImgText from "../components/services/img-text/ImgText";
+import engagement from '../assets/images/services/engagement.svg';
+import DarkSection from "../components/home/dark-section/DarkSection";
+import HeadingText from "../components/home/heading-text/HeadingText";
+import GraySection from "../components/services/gray-section/GraySection";
 
 const imgText1 = {
   img: hands,

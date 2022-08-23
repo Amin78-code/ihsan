@@ -1,12 +1,13 @@
+import Link from "next/link";
 import Image from "next/image";
-import { BsFillCheckCircleFill } from "react-icons/bs";
 import { RiCloseCircleFill } from "react-icons/ri";
-import pattern from '../../../assets/images/pattern.png';
+import { BsFillCheckCircleFill } from "react-icons/bs";
 import bulb from '../../../assets/images/home/bulb.svg';
 import ring from '../../../assets/images/home/ring.svg';
+import pattern from '../../../assets/images/pattern.png';
+import heart from '../../../assets/images/home/heart.svg';
 import mosque from '../../../assets/images/home/mosque.svg';
 import person from '../../../assets/images/home/person.svg';
-import heart from '../../../assets/images/home/heart.svg';
 import clipboard from '../../../assets/images/home/clipboard.svg';
 
 const DarkSection = () => {
@@ -100,7 +101,9 @@ const DarkSection = () => {
                   One-on-one coaching to help build self-confidence, improve
                   relationships, support careers, manage anxiety, and achieve your
                   personal goals.
-                  <a className="block underline cursor-pointer">Learn more</a>
+                  <Link href="/individual">
+                    <a className="block underline cursor-pointer">Learn more</a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -115,21 +118,25 @@ const DarkSection = () => {
                 <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff]">
                   Assess your compatibility and get a better understanding of what
                   constitutes an ideal Islamic marriage.
-                  <a className="block underline cursor-pointer">Learn more</a>
+                  <Link href="/premarital">
+                    <a className="block underline cursor-pointer">Learn more</a>
+                  </Link>
                 </p>
               </div>
             </div>
 
             <div className="w-[100%] md:w-[47%] flex items-start">
               {/* <div className="min-w-[70px] min-h-[70px] max-h-[70px] bg-pink-600 opacity-[.5] mr-[10px]"></div> */}
-              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'>              <Image src={heart} alt="image" /></div>
+              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'><Image src={heart} alt="image" /></div>
               <div>
                 <h4 className="fgb text-[16px] md:text-[36px] leading-[16px] md:leading-[36px] text-[#fff]">Marital Coaching</h4>
                 <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff]">
                   By understanding your partner better, the easier it’ll be to
                   find solutions to conflicts. Learn strategies to communicate and
                   resolve conflicts more effectively.
+                   <Link href="/marital">
                   <a className="block underline cursor-pointer">Learn more</a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -145,7 +152,9 @@ const DarkSection = () => {
                   Designed for either individuals or couples, speak directly to
                   Islamic scholars about any faith-based concerns that may be
                   troubling you.
+                    <Link href="/religious">
                   <a className="block underline cursor-pointer">Learn more</a>
+                    </Link>
                 </p>
               </div>
             </div>

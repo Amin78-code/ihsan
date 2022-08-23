@@ -8,7 +8,9 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
+     <Link href="/contact">
     <a className='fgb text-[#fff] text-[12px] leading-[42px] bg-[#AB8353] w-full flex md:hidden justify-center items-center h-[25px] pt-[3px]'>Get Started<HiCheckCircle className='text-[13px] ml-[3px] mt-[-3px]' /></a>
+    </Link>
     <section className="w-full pt-[40px] pb-[50px] md:py-[93px] bg-[#F2F2F2] relative overflow-hidden">
       <div className='absolute left-0 right-0 top-0 w-full h-[100%]'>
         <Image src={pattern} className='' />

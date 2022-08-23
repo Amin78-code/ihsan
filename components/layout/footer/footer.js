@@ -1,8 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
+import { FaFacebook } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import {  BsFillArrowRightCircleFill } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
