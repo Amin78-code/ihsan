@@ -35,7 +35,7 @@ export default function Programs() {
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-      <BsChevronRight onClick={onClick} className='absolute right-[0.5%] sm:right-[2%] sc1350:right-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2]' />
+      <BsChevronRight onClick={onClick} className='absolute right-[0.5%] sm:right-[2%] sc1350:right-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2] cursor-pointer' />
   //   <div
   //     className={className}
   //     style={{ ...style, display: "block", background: "red", width: '40px', height: '20px' }}
@@ -47,7 +47,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-      <BsChevronLeft onClick={onClick} className='absolute left-[0.5%] sm:left-[2%] sc1350:left-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2]' />
+      <BsChevronLeft onClick={onClick} className='absolute left-[0.5%] sm:left-[2%] sc1350:left-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2] cursor-pointer' />
   //   <div
   //     className={className}
   //     style={{ ...style, display: "block", background: "green", width: '40px', height: '20px' }}

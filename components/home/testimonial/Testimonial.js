@@ -22,7 +22,7 @@ const Testimonial = () => {
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <BsChevronRight onClick={onClick} className='absolute right-[-6%] sm:right-[-4%] sc1350:right-[7%] top-[22%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2]' />
+        <BsChevronRight onClick={onClick} className='absolute right-[-6%] sm:right-[-4%] sc1350:right-[7%] top-[22%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2] cursor-pointer' />
     //   <div
     //     className={className}
     //     style={{ ...style, display: "block", background: "red", width: '40px', height: '20px' }}
@@ -34,7 +34,7 @@ function SampleNextArrow(props) {
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <BsChevronLeft onClick={onClick} className='absolute left-[-6%] sm:left-[-4%] sc1350:left-[7%] top-[22%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2]' />
+        <BsChevronLeft onClick={onClick} className='absolute left-[-6%] sm:left-[-4%] sc1350:left-[7%] top-[22%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2] cursor-pointer' />
     //   <div
     //     className={className}
     //     style={{ ...style, display: "block", background: "green", width: '40px', height: '20px' }}

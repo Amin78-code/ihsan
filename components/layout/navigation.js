@@ -75,21 +75,25 @@ export default function Navigation() {
       </div>
       <div className="bg-[#0F2E3C] block xl:hidden py-[5px]">
         <div className="myContainer flex justify-between items-center">
-        <div className="w-[135px] sm:w-[175px] lg:w-[244px] h-[48px] sm:h-[63px] lg:h-[80px] bg-pink-40 0 opacity-[.4 ] pb-[1px]">
              <Link href="/">
+              <a>
+        <div className="w-[135px] sm:w-[175px] lg:w-[244px] h-[48px] sm:h-[63px] lg:h-[80px] bg-pink-40 0 opacity-[.4 ] pb-[1px]">
               <Image src={logo} alt="Logo" width={1500} height={500} />
-           </Link>
           </div>
+          </a>
+           </Link>
           <TbMenu2 className="text-[18px] sm:text-[40px] text-[#fff]" onClick={()=>openMobMenu()} />
         </div>
       </div>
       <nav id='desktop_nav' className="desktop-nav bg-[#0F2E3C] z-30 transform brown-light text-[15px] flex justify-between items-center">
         <div className="myContainer flex-col  xl:flex-row flex items-center justify-between">
-          <div className="w-[244px] h-[83px] bg-pink-40 0 opacity-[.4 ] pb-[1px] hidden xl:block">
               <Link href="/">
+                 <a>
+          <div className="w-[244px] h-[83px] bg-pink-40 0 opacity-[.4 ] pb-[1px] hidden xl:block">
               <Image src={logo} alt="Logo" width={1500} height={500} />
-            </Link>
           </div>
+             </a>
+            </Link>
           <ul className="desktop-nav-menu text-white capitalize flex-col xl:flex-row text-center xl:text-left flex gap-x-8 pb-[40px] xl:pb-0">
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/about-us">
