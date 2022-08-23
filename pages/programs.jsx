@@ -5,11 +5,13 @@ import HeadingText from "../components/heading-text/HeadingText";
 import Hero from "../components/hero/Hero";
 import Layout from "../components/layout/layout";
 import Slider from "react-slick";
-
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image'
 import Image1 from '../assets/images/Images_programs/Picture 9.jpg'
 import Image2 from '../assets/images/Images_programs/Picture 5.jpg'
 import Image3 from '../assets/images/Images_programs/Picture 7.jpg'
+import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
 
 export default function Programs() {
   const settings = {
@@ -17,7 +19,9 @@ export default function Programs() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    className: 'w-[100%] outline-0 '
+    className: 'w-[100%] outline-0 ',
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
 
   const settings2 = {
@@ -28,6 +32,29 @@ export default function Programs() {
     className: 'w-[100%] flex outline-0 '
   };
  
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+      <BsChevronRight onClick={onClick} className='absolute right-[0.5%] sm:right-[2%] sc1350:right-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2]' />
+  //   <div
+  //     className={className}
+  //     style={{ ...style, display: "block", background: "red", width: '40px', height: '20px' }}
+  //     onClick={onClick}
+  //   />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+      <BsChevronLeft onClick={onClick} className='absolute left-[0.5%] sm:left-[2%] sc1350:left-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2]' />
+  //   <div
+  //     className={className}
+  //     style={{ ...style, display: "block", background: "green", width: '40px', height: '20px' }}
+  //     onClick={onClick}
+  //   />
+  );
+}
   return (
     <Layout>
       {/* hero section jumbotron */}
