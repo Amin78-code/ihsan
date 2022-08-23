@@ -1,5 +1,5 @@
+import Link from "next/link";
 import Image from "next/image";
-// import heroimg from '../../assets/images/home/hero.jpg'
 import pattern from '../../../assets/images/pattern.png';
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import hands from '../../../assets/images/services/hands.svg';
@@ -24,9 +24,11 @@ const ImgText = ({ data, pb }) => {
           <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[26px] text-[#555555]">
             {data.paragraph2}
           </p>
+          <Link href={`/${data.link}`}>
           <a className="fgr w-[181px] h-[50px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] leading-[16px] md:leading-[26px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-[20px] flex justify-center items-center mt-[30px]">
             Learn more
           </a>
+           </Link>
         </div>
       </div>
     </section>

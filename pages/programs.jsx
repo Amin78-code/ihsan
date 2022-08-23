@@ -1,17 +1,17 @@
 import React from "react";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import DarkSection from "../components/dark-section/DarkSection";
-import HeadingText from "../components/heading-text/HeadingText";
-import Hero from "../components/hero/Hero";
-import Layout from "../components/layout/layout";
+import Image from 'next/image'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
+import Hero from "../components/hero/Hero";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image'
+import Layout from "../components/layout/layout";
 import Image1 from '../assets/images/program/9.jpg'
 import Image2 from '../assets/images/program/5.jpg'
 import Image3 from '../assets/images/program/7.jpg'
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
+import DarkSection from "../components/dark-section/DarkSection";
+import HeadingText from "../components/heading-text/HeadingText";
 
 export default function Programs() {
   const settings = {
@@ -36,11 +36,6 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
       <BsChevronRight onClick={onClick} className='absolute right-[0.5%] sm:right-[2%] sc1350:right-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2] cursor-pointer' />
-  //   <div
-  //     className={className}
-  //     style={{ ...style, display: "block", background: "red", width: '40px', height: '20px' }}
-  //     onClick={onClick}
-  //   />
   );
 }
 
@@ -48,11 +43,6 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
       <BsChevronLeft onClick={onClick} className='absolute left-[0.5%] sm:left-[2%] sc1350:left-[3%] top-[38%] text-[25px] sm:text-[35px] text-[#9D9D9D] z-[2] cursor-pointer' />
-  //   <div
-  //     className={className}
-  //     style={{ ...style, display: "block", background: "green", width: '40px', height: '20px' }}
-  //     onClick={onClick}
-  //   />
   );
 }
   return (
@@ -61,7 +51,7 @@ function SamplePrevArrow(props) {
     <section className="w-full py-[93px] bg-[#F2F2F2]">
       <div className="myContainer flex">
         <div className=" w-full xl:h-[540px] flex justify-center flex-col text-center ">
-          <h1 className="fpr text-[40px] sm:[52px] md:text-[80px] 2xl:text-[110px] 2xl:leading-[140px] text-[#0F2E3C] ">
+          <h1 className="fpr text-[40px] sm:[52px] md:text-[80px] leading-[40px] md:leading-[80px] 2xl:text-[110px] 2xl:leading-[140px] text-[#0F2E3C] ">
             Programs and seminars
           </h1>
           <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] ">

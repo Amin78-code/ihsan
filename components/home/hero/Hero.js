@@ -25,14 +25,14 @@ const Hero = () => {
             overcome life’s struggles. Our online platform is a simpler way to
             access the support you need anytime, anywhere you need it.
           </p>
+          <Link href="/contact">
           <a>
-          <Link href="#">
-            <button className="fgr w-[130px] md:w-[332px] h-[31px] md:h-[79px] flex justify-between items-center bg-[#AE8B5C] text-[12px] md:text-[24px] leading-[36px] text-[#fff] rounded-[50px] px-[11px] md:px-[30px] pt-[8px] pb-[7px] md:py-[10px] hover:opacity-[.8]">
+            <button type='button' className="f fgr w-[130px] md:w-[332px] h-[31px] md:h-[79px] flex justify-between items-center bg-[#AE8B5C] text-[12px] md:text-[24px] leading-[36px] text-[#fff] rounded-[50px] px-[11px] md:px-[30px] pt-[8px] pb-[7px] md:py-[10px] hover:opacity-[.8]">
               Get started 
               <BsFillArrowRightCircleFill className='text-[12px] md:text-[30px]' />
             </button>
-           </Link>
           </a>
+           </Link>
         </div>
         <div className='home-hero-img mt-[-30px] right-0 md:right-[-20px] before:w-[58px] md:before:w-[200px] relative before:h-[58px] md:before:h-[200px] before:bg-[#AE8B5C] before:rounded-[100px] before:right-[0] md:before:right-[-35px] before:bottom-0 md:before:bottom-[10px] before:absolute'>
           <Image src={heroimg} />

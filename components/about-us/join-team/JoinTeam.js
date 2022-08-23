@@ -52,8 +52,6 @@ const JoinTeam = () => {
 
 
           </ul>
-
-
           <div className='mt-[50px] block md:hidden'>
             <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px]'> Apply Now</h5>
             <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]"
@@ -75,12 +73,7 @@ const JoinTeam = () => {
 
           <div className="w-full flex justify-center">
             <Image src={vector} className='' />
-
-          </div>
-
-
-
-
+            </div>
           <div className='mt-[50px] hidden md:block'>
             <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px]'> Apply Now</h5>
             <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]"

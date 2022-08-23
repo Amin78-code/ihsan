@@ -15,7 +15,7 @@ const Hero = () => {
             access the support you need anytime, anywhere you need it.
           </p>
           <a>
-             <Link href="#">
+          <Link href="/contact">
             <button className="fgr w-[332px] h-[79px] flex justify-between items-center bg-[#AE8B5C] text-[24px] text-[#fff] rounded-[50px] px-[30px] py-[10px] hover:opacity-[.8]">
               Get started 
               <BsFillArrowRightCircleFill style={{ fontSize: "30px" }} />

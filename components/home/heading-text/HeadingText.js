@@ -22,7 +22,7 @@ const HeadingText = () => {
           juxtaposition of your culture and current situation.
         </p>
         <a className="fgr block mx-auto w-[100px] md:w-[202px] h-[28px] md:h-[61px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] rounded-[50px] px-[18px] md:px-[30px] py-[6px] md:py-[13px] mt-[15px] md:mt-[52px] hover:opacity-[.8] cursor-pointer">
-         <Link href="#">
+        <Link href="/contact">
           Get Started
         </Link>
         </a>

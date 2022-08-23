@@ -1,10 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import arrow from "../../assets/images/icons/arrow.svg";
-// import logo from "../../assets/images/logo/logo.svg";
-import logo from "../../assets/images/logo/logo.png";
-// import navBrand from "../../assets/images/bg/navBrand.png";
-import Script from "next/script";
+import logo from "../../assets/images/logo/logo.svg";
 import { FiInstagram } from "react-icons/fi";
 import { BsChevronDown } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
@@ -17,10 +14,8 @@ export default function Navigation() {
   var isMenuHide = true;
   var isRotate = false;
   var isOpenDropdown = false;
-  //   const toggle = document.getElementById("toggle");
 
   function toggleFunction() {
-    // console.log("called");
     toggle.classList.toggle("active");
     if (isMenuHide == true) {
       document.getElementById("menu_options").classList.add("show-menu");
@@ -54,22 +49,22 @@ export default function Navigation() {
       <div className="hidden md:block h-[50px] bg-[#fff]">
         <ul className="myContainer flex justify-end items-center h-[100%]">
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
-            <a href='#'>Careers</a>
+            <Link href="#">Careers</Link>
           </li>
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
-            <a href='#'>Blog</a>
+            <Link href="#">Blog</Link>
           </li>
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
             <Link href='/contact'>Contact</Link>
           </li>
           <li className="px-[1.8%] text-[24px] fgr font-[600]">
-            <a href='#'>Donations</a>
+           <Link href="#">Donations</Link>
           </li>
           <li className="px-[0.5%] text-[24px] fgr font-[600]">
-            <a href='#'><FiInstagram /></a>
+           <Link href="#"><a><FiInstagram /></a></Link>
           </li>
           <li className="px-[0.5%] text-[24px] fgr font-[600]">
-            <a href='#'><FaFacebook /></a>
+          <Link href="#"><a><FaFacebook /></a></Link>
           </li>
         </ul>
       </div>
@@ -95,35 +90,35 @@ export default function Navigation() {
              </a>
             </Link>
           <ul className="desktop-nav-menu text-white capitalize flex-col xl:flex-row text-center xl:text-left flex gap-x-8 pb-[40px] xl:pb-0">
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[18px] sm:text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/about-us">
                 <a>About Us</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="#">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[18px] sm:text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
+              <Link href="/about-us/#join_team">
                 <a>Our Team</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[18px] sm:text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/services">
                 <a>Services</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[18px] sm:text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/programs">
                 <a>Programs</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              {/* <Link href="/faqs"> */}
-                <a href="#faq">FAQs</a>
-              {/* </Link> */}
-            </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="#">
-                <a className="bg-[#AE8B5C] text-[#fff] rounded-[50px] px-[53px] py-[22px] hover:opacity-[.8]">Get Started</a>
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[18px] sm:text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
+              <Link href="/#faq">
+                <a >FAQs</a>
               </Link>
+            </li>
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[18px] sm:text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
+              <Link href="/contact">
+                <a className="bg-[#AE8B5C] text-[#fff] rounded-[50px] px-[53px] py-[22px] hover:opacity-[.8]">Get Started</a>
+             </Link>
             </li>
           </ul>
         </div>

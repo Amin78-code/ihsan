@@ -23,7 +23,7 @@ const HeadingText = () => {
         </p>
         <a className="fgr block mx-auto w-[202px] h-[61px] bg-[#AE8B5C] text-[#fff] text-[24px] rounded-[50px] px-[30px] py-[13px] mt-[52px] hover:opacity-[.8]">
          
-          <Link href="#">
+        <Link href="/contact">
              Get Started
            </Link>
 

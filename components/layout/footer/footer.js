@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../assets/images/logo/logo.svg";
-import { BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
-import { BsChevronDown, BsFillArrowRightCircleFill } from "react-icons/bs";
+import {  BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
@@ -21,26 +19,26 @@ const Footer = () => {
               to set up an initial session that fits your schedule.
             </p>
             <div className="flex justify-center items-center gap-x-[20px]">
+              <Link href="/contact">
               <a>
-                 <Link href="#">
                 <button className="fgr w-[120px] md:w-[332px] h-[28px] md:h-[79px] border-[1px] md:border-[3px] border-[#fff] flex justify-between items-center bg-[#fff] text-[12px] md:text-[24px] text-[#555555] rounded-[50px] px-[11px] md:px-[30px] py-[7px] md:py-[10px] hover:border-[#FAF7F2] hover:bg-[#0F2E3C] hover:text-[#fff] group">
                   Get started
                   <BsFillArrowRightCircleFill
                      className="text-[#555] text-[12px] md:text-[30px] group-hover:text-[#fff]"
                   />
                 </button>
-                 </Link>
               </a>
+                 </Link>
+                 <Link href="/about-us/#join_team">
               <a>
-                 <Link href="#">
                 <button className="fgr w-[120px] md:w-[332px] h-[28px] md:h-[79px] border-[1px] md:border-[3px] border-[#FAF7F2] flex justify-between items-center bg-[#0F2E3C] text-[12px] md:text-[24px] text-[#fff] rounded-[50px] px-[11px] md:px-[30px] py-[7px] md:py-[10px] hover:text-[#555555] hover:bg-[#fff] group">
                   Meet the team
                   <BsFillArrowRightCircleFill
                   className="text-[#fff] text-[12px] md:text-[30px] group-hover:text-[#555]"
                   />
                 </button>
-                 </Link>
               </a>
+                 </Link>
             </div>
           </div>
           <div className="myContainer-footer px-[10px] pt-[35px] md:pt-[110px] pb-0 md:pb-[100px] flex flex-col md:flex-row justify-between">
@@ -50,16 +48,16 @@ const Footer = () => {
               </h6>
               <ul>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer">
-                  Individual Coaching
+                  <Link href="/individual">Individual Coaching</Link>
                 </li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer">
-                  Premarital Coaching
+                  <Link href="/premarital">Premarital Coaching</Link>
                 </li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer">
-                  Marital Coaching
+                  <Link href="/marital">Marital Coaching</Link>
                 </li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer">
-                  Religious Coaching
+                  <Link href="/religious">Religious Coaching</Link>
                 </li>
               </ul>
             </div>
@@ -68,7 +66,7 @@ const Footer = () => {
               <ul>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"> <Link href="/">Home </Link></li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"> <Link href="/about-us">About Us</Link></li>
-                <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"> <Link href="#">Team </Link></li>
+                <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"> <Link href="/about-us/#join_team">Team </Link></li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"> <Link href="#">Careers </Link></li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"> <Link href="/programs">Programs </Link></li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"> <Link href="/contact">Contact </Link></li>
@@ -80,12 +78,12 @@ const Footer = () => {
               </h6>
               <ul>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer">
-                  info@ihsancoaching.ca
+                <a href="mailto:info@ihsancoaching.ca">info@ihsancoaching.ca</a>
                 </li>
-                <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer">1-630-557-9427</li>
+                <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] hover:opacity-[.8] cursor-pointer"><a href="tel:+16305579427">1-630-557-9427</a></li>
                 <li className="fgr text-[#fff] text-[12px] md:text-[24px] leading-[22px] md:leading-[42px] py-0 md:py-[2px] flex gap-x-[5px] pt-[6px]">
-                  <FiInstagram className="hover:opacity-[.8] cursor-pointer" />
-                  <FaFacebook className="hover:opacity-[.8] cursor-pointer" />
+                  <Link href="#"><a><FiInstagram className="hover:opacity-[.8]" /></a></Link>
+                  <Link href="#"><a><FaFacebook className="hover:opacity-[.8]" /></a></Link>
                 </li>
               </ul>
             </div>
