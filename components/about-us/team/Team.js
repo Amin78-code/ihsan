@@ -10,38 +10,44 @@ import person5 from '../../../assets/images/about-us/person5.svg';
 import person6 from '../../../assets/images/about-us/person6.svg';
 import person7 from '../../../assets/images/about-us/person4.svg';
 import person8 from '../../../assets/images/about-us/person3.svg';
+import ProfileCard from './ProfileCard'
 
 const coaches = [{
     profileImg: person1,
-    name: 'Farhan Ahmed ',
+    name: 'Farhan Ahmed',
+    slugName: 'Farhan_Ahmed',
     designation: 'Founder & Coach',
     status: 'Masters in Clinical Mental Health Counseling',
     email: 'farhan.ahmed@ihsancoaching.com',
 },
 {
     profileImg: person2,
-    name: 'Maria Mir   ',
+    name: 'Maria Mir',
+    slugName: 'Maria_Mir',
     designation: ' Coach',
     status: 'Masters in Clinical Psychology',
     email: 'maria.mir@ihsancoaching.com',
 },
 {
     profileImg: person3,
-    name: 'Rehena Rana  ',
+    name: 'Rehena Rana',
+    slugName: 'Rehena_Rana',
     designation: 'Coach',
     status: 'Masters in Clinical Psychology',
     email: 'rehena.rana@ihsancoaching.com',
 },
 {
     profileImg: person4,
-    name: 'Rawand Abdelghani   ',
+    name: 'Rawand Abdelghani',
+    slugName: 'Rawand_Abdelghani',
     designation: 'Coach',
     status: 'Masters of Science in Social Work',
     email: 'rawand.abdelghani@ihsancoaching.com',
 },
 {
     profileImg: person5,
-    name: 'Asmaa Mahran   ',
+    name: 'Asmaa Mahran',
+    slugName: 'Asmaa_Mahran',
     designation: 'Coach',
     status: 'Masters of Science in Psychology',
     email: 'asmaa.mahran@ihsancoaching.com',
@@ -49,6 +55,7 @@ const coaches = [{
 {
     profileImg: person6,
     name: 'Mohammed Bemat Coach`',
+    slugName: 'Mohammed_Bemat_Coach`',
     designation: 'Coach',
     status: 'Masters in Pastoral Studies',
     email: 'mohammed.bemat@ihsancoaching.com',
@@ -59,16 +66,18 @@ const coaches = [{
 const religiousConsultants = [{
     profileImg: person7,
     name: 'Mufti Zeshan Ahmed',
+    slugName: 'Mufti_Zeshan Ahmed',
     designation: ' Religious Consultant',
     status: 'Resident Scholar at Masjid Uthman',
     email: 'zeshan.ahmed@ihsancoaching.com',
 },
 {
     profileImg: person8,
-    name: 'Imam Azhar Subedar ',
+    name: 'Imam Azhar Subedar',
+    slugName: 'Imam_Azhar Subedar',
     designation: ' Religious Consultant',
     status: 'Masters in Islamic Sciences',
-    email: 'Azhar.subedar@ihsancoaching.com',
+    email: 'azhar.subedar@ihsancoaching.com',
 }
 ]
 
@@ -91,43 +100,17 @@ const Team = () => {
                 <div className='flex flex-col md:flex-row flex-wrap md:gap-x-[4%] lg:gap-x-[2.5%] gap-y-[50px] mt-[20px] md:mt-[55px] mb-[30px] md:mb-[80px]'>
                     {coaches.map((value) => {
                         return (
-                            <div key={value.profileImg} className='w-full md:w-[48%] lg:w-[31.5%] overflow-hidden'>
-                                <div className='w-full img_container'><Image src={value.profileImg} /></div>
-                                <h3 className='fpr text-[24px] md:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
-                                    {value.name}
-                                </h3>
-                                <h4 className='fgr text-[16px] md:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
-                                <p className='fgr text-[12px] md:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
-                                <p className='email fgr text-[12px] md:text-[24px] leading-[36px] text-[#555555] flex items-center'>
-                                    <div className='mr-[5px] md:mr-[10px] mt-[5px] min-w-[20px] md:min-w-[32px] w-[20px] md:w-[auto]'><Image src={email} /></div>
-                                    <span className='text-ellipsis overflow-hidden'>{value.email}</span>
-                                </p>
-                                <a className="fgr w-[94px] w-[181px] h-[31px] md:h-[50px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] leading-[36px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-0 md:mb-[20px] flex justify-center items-center mt-0 md:mt-[25px]">
-                                    View profile
-                                </a>
-                            </div>
+                           <>
+                            <ProfileCard data={value} key={value.profileImg} />
+                           </>
                         )
                     })}
                 </div>
                 <h2 className='fpr text-[28px] md:text-[58px] sc1500px:text-[68px] text-[#0F2E3C] leading-[24px] md:leading-[70px] sc1500:leading-[100px]'>  <Link href='/religious'>Religious Consultants</Link></h2>
                 <div className='flex flex-col md:flex-row flex-wrap gap-x-[2.5%] gap-y-[50px] mt-[20px] md:mt-[55px] mb-[30px] md:mb-[80px]'>
-                    {religiousConsultants.map((value) => {
+                    {religiousConsultants.map((valu) => {
                         return (
-                            <div key={value.profileImg} className='w-full md:w-[48%] lg:w-[31.5%] overflow-hidden'>
-                                <div className='w-full img_container'> <Image src={value.profileImg} /></div>
-                                <h3 className='fpr text-[24px] md:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
-                                    {value.name}
-                                </h3>
-                                <h4 className='fgr text-[16px] md:text-[28px] leading-[20px] md:leading-[36px] text-[#555555] pt-[5px] pb-0 md:pb-[4px]'>  {value.designation}</h4>
-                                <p className='fgr text-[12px] md:text-[24px] leading-[20px] md:leading-[36px] text-[#555555]'> {value.status}</p>
-                                <p className='email fgr text-[12px] md:text-[24px] leading-[36px] text-[#555555] flex items-center'>
-                                    <div className='mr-[5px] md:mr-[10px] mt-[5px] min-w-[20px] md:min-w-[32px] w-[20px] md:w-[auto]'><Image src={email} /></div>
-                                    <span className='text-ellipsis overflow-hidden'>{value.email}</span>
-                                </p>
-                                <a className="fgr w-[94px] w-[181px] h-[31px] md:h-[50px] bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[24px] leading-[36px] rounded-[50px] px-[5px] py-[10px] hover:opacity-[.8] cursor-pointer mb-0 md:mb-[20px] flex justify-center items-center mt-0 md:mt-[25px]">
-                                    View profile
-                                </a>
-                            </div>
+                            <ProfileCard data={valu} key={valu.profileImg} />
                         )
                     })}
                 </div>

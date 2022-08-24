@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className={`bg-[#0F2E3C] pt-[42px] md:pt-[97px]`}>
         <div className="pb-0">
           <div className="myContainer-footer">
-            <h1 className="fpr text-[32px] md:text-[85px] text-[#fff] leading-[32px] md:leading-[85px] max-w-[800px] mx-auto text-center">
+            <h1 className="fpr text-[32px] md:text-[60px] sc1500:text-[85px] text-[#fff] leading-[32px] md:leading-[60px] sc1500:leading-[85px] max-w-[800px] mx-auto text-center">
               Get started with Ihsan Coaching today
             </h1>
             <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] pt-[21px] md:pt-[62px] pb-[21px] md:pb-[77px] max-w-[1090px] mx-auto text-center">

@@ -1,10 +1,10 @@
-import React from "react";
 import Image from 'next/image'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import Hero from "../components/hero/Hero";
 import "slick-carousel/slick/slick-theme.css";
 import Layout from "../components/layout/layout";
+import pattern from '../assets/images/pattern.png';
 import Image1 from '../assets/images/program/9.jpg'
 import Image2 from '../assets/images/program/5.jpg'
 import Image3 from '../assets/images/program/7.jpg'
@@ -48,10 +48,14 @@ function SamplePrevArrow(props) {
   return (
     <Layout>
       {/* hero section jumbotron */}
-    <section className="w-full py-[93px] bg-[#F2F2F2]">
+    <section className="w-full py-[93px] bg-[#F2F2F2] relative overflow-hidden">
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%]'>
+        <div className='scale-[1.5]'><Image src={pattern} /></div>
+      </div>
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] linear-gradient-4'></div>
       <div className="myContainer flex">
-        <div className=" w-full xl:h-[540px] flex justify-center flex-col text-center ">
-          <h1 className="fpr text-[40px] sm:[52px] md:text-[80px] leading-[40px] md:leading-[80px] 2xl:text-[110px] 2xl:leading-[140px] text-[#0F2E3C] ">
+        <div className=" w-full xl:h-[540px] flex justify-center flex-col text-center relative z-[1]">
+          <h1 className="fpr text-[40px] sm:[52px] md:text-[75px] sc1500:text-[100px] leading-[40px] md:leading-[75px] sc1500:leading-[140px] text-[#0F2E3C] ">
             Programs and seminars
           </h1>
           <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] ">
@@ -187,12 +191,14 @@ function SamplePrevArrow(props) {
 
     {/* Contact Section */}
 
-    <section>
-      <div className="main__container">
-          <div className="bg-[#AE8B5C] p-[50px] xl:p-[100px] ">
+    <section className="relative overflow-hidden">
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] overlay-img'>
+        <Image src={pattern} className='scale-[1.5] ' />
+      </div>
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#AE8B5C] opacity-[.99]'></div>
+      <div className="main__container relative z-[2]">
+          <div className="bg-[#AE8B5C ] p-[50px] xl:p-[100px] ">
             <h2 className="fpr text-[28px] 2xl:text-[52px] mt-[70px] text-[#fff]">Ihsan Coaching is always available to partner with organizations to deliver programs and seminars to local communicates. Contact our team to enquire about programs and seminars.</h2>
-
-
             <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[50px]" action="">
                 <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 h-[50px] w-full lg:w-[49%] rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="First Name*" />
                 <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 h-[50px] w-full lg:w-[49%] rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Last Name*" />

@@ -8,8 +8,7 @@ const BrownSection = () => {
       <div className='absolute left-0 right-0 top-0 w-full h-[100%] overlay-img'>
         <Image src={pattern} className='scale-[1.5] ' />
       </div>
-      <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#AE8B5C] opacity-[.99]'>
-      </div>
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#AE8B5C] opacity-[.99]'></div>
       <div className="myContainer relative z-[2]">
         <h1 className='fpr text-[32px] md:text-[75px] sc1500:text-[100px] leading-[32px] md:leading-[75px] sc1500:leading-[100px] text-center'>Our approach</h1>
         <p className='fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] max-w-[1502px] text-center pt-[20px] md:pt-[32px]'>

@@ -6,7 +6,7 @@ import hands from '../../../assets/images/services/hands.svg';
 
 const Content = ({ data, pb }) => {
   return (
-    <section className={`w-full pt-[40px] md:pt-[100px] pb-[30px] md:pb-[70px] bg-[#fff] relativ e ${pb ? "pb-[300px]" : ""}`}>
+    <section className={`w-full pt-[40px] md:pt-[60px] lg:pt-[100px] pb-[30px] md:pb-[70px] bg-[#fff] relativ e ${pb ? "pb-[300px]" : ""}`}>
       <div className="myContainer  ">
         <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#555555] pb-[20px] md:pb-[40px]">
           Whether you need solutions to ongoing problems, need direction in how to achieve your personal goals or just aren’t feeling quite like yourself, our individual coaching services are tailored to your needs.
@@ -21,7 +21,7 @@ const Content = ({ data, pb }) => {
       </div>
       <div className="myContainer flex flex-col xl:flex-row justify-end relative pt-[3.7%] pb-[8%]">
 
-        <div className='absolute left-0 top-[5%] xl:top-[unset] max-w-[85%] sm:max-w-[90%] md:max-w-[100%] xl:max-w-[46%]'>
+        <div className='absolute left-0 top-[5%] xl:top-[unset] max-w-[85%] sm:max-w-[90%] md:max-w-[100%] xl:max-w-[42%] sc1500:max-w-[46%]'>
           <div className='max-w-[100%] left-0 after:w-[100px] md:after:w-[200px] relative after:h-[100px] md:after:h-[200px] after:bg-[#0F2E3C] after:rounded-[100px] after:right-[-15px] sm:after:right-[-35px] after:bottom-[-15px] sm:after:bottom-[-40px] after:absolute after:z-[-1] z-[2]
         before:w-[150px] md:before:w-[337px] relative before:h-[100px] md:before:h-[200px] before:bg-[#0F2E3C] before:rounded-tr-[100px] before:left-[0] before:top-[-30px] sm:before:top-[-50px] before:absolute
         '><Image src={data.img} />

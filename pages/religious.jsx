@@ -2,18 +2,24 @@ import Image from "next/image";
 import Layout from "../components/layout/layout";
 import Quraan from "../assets/images/services/Quran.svg";
 import BrownSection from "../components/religious/brown-section/BrownSection";
+import pattern from '../assets/images/pattern.png';
 
 export default function Programs() {
   return (
     <Layout>
       {/* hero section jumbotron */}
-      <section className="w-full py-[93px] bg-[#F2F2F2]">
+      <section className="w-full py-[93px] bg-[#F2F2F2] relative overflow-hidden">
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%]'>
+        <div className='scale-[1.5]'><Image src={pattern} /></div>
+      </div>
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] linear-gradient-4'></div>
         <div className="myContainer flex">
-          <div className=" w-full xl:h-[540px] flex justify-center flex-col text-center ">
-            <h1 className="fpr text-[35px] sm:[52px] md:text-[70px] 2xl:text-[100px] leading-[35px] md:leading-[70px] 2xl:leading-[140px] text-[#0F2E3C] ">
+        {/* <div className="myContainer flex flex-col justify-center relative z-[1]"> */}
+          <div className=" w-full xl:h-[540px] flex justify-center flex-col text-center relative z-[1]">
+            <h1 className="fpr text-[35px] sm:[52px] md:text-[75px] sc1500:text-[100px] leading-[35px] md:leading-[75px] sc1500:leading-[140px] text-[#0F2E3C] ">
               Religious consulting
             </h1>
-            <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] pt-[15px] md:pt-[55px]">
+            <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] pt-[15px] md:pt-[25px] sc1500:pt-[55px]">
               Our religious consultation services are a simpler way to connect
               and speak directly with an Islamic <br /> scholar about any
               situation you’d like to discuss.
@@ -23,7 +29,7 @@ export default function Programs() {
       </section>
 
       {/* We face with -- section */}
-      <section className="w-full pt-[40px] md:pt-[93px] pb-[30px] md:pb-[93px]   bg-[#fff]">
+      <section className="w-full pt-[40px] md:pt-[60px] lg:pt-[93px] pb-[30px] md:pb-[93px]   bg-[#fff]">
         <div className="myContainer">
           <div className=" w-full ">
             <p className=" text-[12px] md:text-[20px] lg:text-[24px] mt-4 text-[#555555] ">

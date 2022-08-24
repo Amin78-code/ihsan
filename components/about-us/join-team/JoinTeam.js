@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import Image from "next/image";
+import React, { useState } from "react";
 import pattern from '../../../assets/images/pattern.png';
 import vector from '../../../assets/images/about-us/vector.svg';
 
@@ -8,6 +8,7 @@ const JoinTeam = () => {
   const [LastName, setLastName] = useState("");
   const [Email, setEmail] = useState("");
   const [Message, setMessage] = useState("");
+  const [FileChoosed, setFileChoosed] = useState(null);
 
   const joinTeam = (e) => {
     e.preventDefault();
@@ -15,14 +16,15 @@ const JoinTeam = () => {
     console.log("LastName", LastName);
     console.log("Email", Email);
     console.log("Message", Message);
+    console.log("FileChoosed", FileChoosed);
   };
 
   return (
     <section className="w-full py-[40px] md:py-[93px] bg-[#F2F2F2] relative overflow-hidden">
       <div className='absolute left-0 right-0 top-0 w-full h-[100%]'>
-        <Image src={pattern} className='' />
+      <div className='scale-[1.1]'><Image src={pattern} /></div>
       </div>
-      <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#f2f2f2] opacity-[.99]'>
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] linear-gradient-3'>
       </div>
       <div className="myContainer flex flex-col-reverse md:flex-row relative z-[1]">
 
@@ -83,9 +85,8 @@ const JoinTeam = () => {
               <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="First Name*" required onChange={(e) => setFirstName(e.target.value)} />
               <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Last Name*" required onChange={(e) => setLastName(e.target.value)} />
               <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Email Address*" required onChange={(e) => setEmail(e.target.value)} />
-              <textarea rows="4" className=" shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" placeholder="Message" required onChange={(e) => setMessage(e.target.value)}>
-              </textarea>
-              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] bg-[#fff]" type="file" id="myfile" name="myfile" />
+              <textarea rows="4" className=" shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" placeholder="Message" required onChange={(e) => setMessage(e.target.value)} />
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] bg-[#fff]" type="file" id="myfile" name="myfile" onChange={(e) => setFileChoosed(e.target.value)} />
               <div className=" w-full">
                 <button type="submit" className="shadow-[0_0_6px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
               </div>

@@ -13,9 +13,9 @@ const Hero = () => {
     </Link>
     <section className="w-full pt-[40px] pb-[50px] md:py-[93px] bg-[#F2F2F2] relative overflow-hidden">
       <div className='absolute left-0 right-0 top-0 w-full h-[100%]'>
-        <Image src={pattern} className='' />
+      <div className='scale-[1.3]'><Image src={pattern} className='' /></div>
       </div>
-      <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#f2f2f2] opacity-[.99]'>
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] linear-gradient-2'>
       </div>
       <div className="myContainer flex flex-col-reverse lg:flex-row relative z-[1]">
         <div className="w-full lg:w-[48%]">
