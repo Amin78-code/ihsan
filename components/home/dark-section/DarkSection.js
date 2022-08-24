@@ -40,7 +40,7 @@ const DarkSection = () => {
           <div className="flex flex-col lg:flex-row pt-[60px] pb-[50px] md:py-[130px] items-center lg:items-end">
             <div className="flex flex-[100%] lg:flex-[47%]">
               <div className="mr-[20px]   sc1440:w-[auto] w-[52px] md:w-[150px] lg:md:w-[80px] xl:w-[150px] h-[53px] md:w-[auto]">
-                <Image src={bulb} alt="image" />
+                <Image src={bulb} alt="bulb" />
               </div>
               <div>
                 <h6 className="fgr text-[16px] md:text-[36px] leading-[26px] md:leading-[36px] font-[600] text-[#fff]">
@@ -64,7 +64,7 @@ const DarkSection = () => {
             </p>
             <div className="flex flex-[100%] lg:flex-[47%]">
               <div className="mr-[20px] sc1440:w-[auto] w-[37px] md:w-[90px] lg:md:w-[60px] xl:w-[90px] h-[69px] md:w-[auto]">
-                <Image src={clipboard} alt="image" />
+                <Image src={clipboard} alt="clipboard" />
               </div>
               <div>
                 <h6 className="fgr text-[16px] md:text-[36px] leading-[26px] md:leading-[36px] font-[600] text-[#fff]">
@@ -92,7 +92,7 @@ const DarkSection = () => {
           <div className="flex flex-wrap justify-center items-center gap-x-[0] md:gap-x-[5%] gap-y-[26px] md:gap-y-[50px]">
             <div className="w-[100%] md:w-[47%] flex items-start">
               {/* <div className="min-w-[70px] min-h-[70px] max-h-[70px] bg-pink-600 opacity-[.5] mr-[10px]"></div> */}
-              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'>              <Image src={person} alt="image" /></div>
+              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'>              <Image src={person} alt="person" /></div>
               <div>
                 <h4 className="fgb text-[16px] md:text-[36px] leading-[16px] md:leading-[36px] text-[#fff]">
                   Individual Coaching
@@ -127,7 +127,7 @@ const DarkSection = () => {
 
             <div className="w-[100%] md:w-[47%] flex items-start">
               {/* <div className="min-w-[70px] min-h-[70px] max-h-[70px] bg-pink-600 opacity-[.5] mr-[10px]"></div> */}
-              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'><Image src={heart} alt="image" /></div>
+              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'><Image src={heart} alt="heart" /></div>
               <div>
                 <h4 className="fgb text-[16px] md:text-[36px] leading-[16px] md:leading-[36px] text-[#fff]">Marital Coaching</h4>
                 <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff]">
@@ -143,7 +143,7 @@ const DarkSection = () => {
 
             <div className="w-[100%] md:w-[47%] flex items-start">
               {/* <div className="min-w-[70px] min-h-[70px] max-h-[70px] bg-pink-600 opacity-[.5] mr-[10px]"></div> */}
-              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'>              <Image src={mosque} alt="image" /></div>
+              <div className='min-w-[27px] md:min-w-[60px] w-[27px] md:w-[60px] min-h-[27px] md:min-h-[60px] h-[27px] md:h-[60px] mt-[10px] mr-[10px]'>              <Image src={mosque} alt="mosque" /></div>
               <div>
                 <h4 className="fgb text-[16px] md:text-[36px] leading-[16px] md:leading-[36px] text-[#fff]">
                   Religious Consulting
