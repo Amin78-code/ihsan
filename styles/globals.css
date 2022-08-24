@@ -64,16 +64,16 @@ body {
 .myContainer {
   width: 100%;
   max-width: 1752px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 .myContainer-footer {
   width: 100%;
   max-width: 1752px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }

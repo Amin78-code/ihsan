@@ -11,7 +11,7 @@ const BrownSection = () => {
       <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#AE8B5C] opacity-[.99]'>
       </div>
       <div className="myContainer relative z-[2]">
-        <h1 className='fpr text-[35px] md:text-[70px] leading-[35px] md:leading-[85px] text-center max-w-[900px] mx-auto'>Areas our marital coaching can help you with</h1>
+        <h1 className='fpr text-[35px] md:text-[60px] sc1500:text-[70px] leading-[35px] md:leading-[60px] sc1500:leading-[85px] text-center max-w-[900px] mx-auto'>Areas our marital coaching can help you with</h1>
         <p className='fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] max-w-[1502px] mx-auto text-center pt-[32px]'>
         Ihsan Coaching provides comprehensive marital coaching services for all your needs, including:
         </p>

@@ -81,17 +81,17 @@ const Team = () => {
                 </div>
                 <div className='myContainer flex justify-end items-end'>
                     <div className='w-full lg:w-[50%] pl-0 lg:pl-[3.5%] pr-0 lg:pr-[3%]   pt-[80%] sm:pt-[75%] lg:pt-[280px] lg:pt-0'>
-                        <h2 className='fpr text-[32px] md:text-[100px] text-[#0F2E3C] leading-[32px] md:leading-[100px]'>Meet the team</h2>
+                        <h2 className='fpr text-[32px] md:text-[75px] sc1500:text-[100px] text-[#0F2E3C] leading-[32px] md:leading-[75px] sc1500:leading-[100px]'>Meet the team</h2>
                         <p className='fgr text-[12px] md:text-[24px] text-[#555] leading-[16px] md:leading-[36px] mt-[10px] md:mt-[32px]'> Our secret to success is an exceptional and diverse team, all of whom come from diverse and unique backgrounds. Our coaches are licensed therapists with extensive experience offering culturally and spiritually responsive services.</p>
                     </div>
                 </div>
             </div>
-            <div className='myContainer pt-[50px] md:pt-0'>
-                <h2 className='fpr text-[28px] md:text-[68px] text-[#0F2E3C] leading-[24px] md:leading-[100px]'>Coaches</h2>
-                <div className='flex flex-col md:flex-row flex-wrap gap-x-[2.5%] gap-y-[50px] mt-[20px] md:mt-[55px] mb-[30px] md:mb-[80px]'>
+            <div className='myContainer pt-[50px] md:pt-[20px] lg:pt-0'>
+                <h2 className='fpr text-[28px] md:text-[58px] sc1500px:text-[68px] text-[#0F2E3C] leading-[24px] md:leading-[70px] sc1500:leading-[100px]'>Coaches</h2>
+                <div className='flex flex-col md:flex-row flex-wrap md:gap-x-[4%] lg:gap-x-[2.5%] gap-y-[50px] mt-[20px] md:mt-[55px] mb-[30px] md:mb-[80px]'>
                     {coaches.map((value) => {
                         return (
-                            <div key={value.profileImg} className='w-full md:w-[31.5%] overflow-hidden'>
+                            <div key={value.profileImg} className='w-full md:w-[48%] lg:w-[31.5%] overflow-hidden'>
                                 <div className='w-full img_container'><Image src={value.profileImg} /></div>
                                 <h3 className='fpr text-[24px] md:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
                                     {value.name}
@@ -109,11 +109,11 @@ const Team = () => {
                         )
                     })}
                 </div>
-                <h2 className='fpr text-[28px] md:text-[68px] text-[#0F2E3C] leading-[24px] md:leading-[100px]'>  <Link href='/religious'>Religious Consultants</Link></h2>
+                <h2 className='fpr text-[28px] md:text-[58px] sc1500px:text-[68px] text-[#0F2E3C] leading-[24px] md:leading-[70px] sc1500:leading-[100px]'>  <Link href='/religious'>Religious Consultants</Link></h2>
                 <div className='flex flex-col md:flex-row flex-wrap gap-x-[2.5%] gap-y-[50px] mt-[20px] md:mt-[55px] mb-[30px] md:mb-[80px]'>
                     {religiousConsultants.map((value) => {
                         return (
-                            <div key={value.profileImg} className='w-full md:w-[31.5%] overflow-hidden'>
+                            <div key={value.profileImg} className='w-full md:w-[48%] lg:w-[31.5%] overflow-hidden'>
                                 <div className='w-full img_container'> <Image src={value.profileImg} /></div>
                                 <h3 className='fpr text-[24px] md:text-[42px] leading-[20px] md:leading-[36px] text-[#182657] mt-[14px] md:mt-[24px]'>
                                     {value.name}

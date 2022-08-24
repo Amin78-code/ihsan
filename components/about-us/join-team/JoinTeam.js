@@ -53,39 +53,41 @@ const JoinTeam = () => {
 
           </ul>
           <div className='mt-[50px] block md:hidden'>
-            <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px]'> Apply Now</h5>
-            <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]"
+            <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px] pb-[10px]'>Apply Now</h5>
+            <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-[23px] mt-[10px]"
               // action="" 
               onSubmit={(e) => joinTeam(e)}>
-              <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" required onChange={(e) => setFirstName(e.target.value)} />
-              <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" required onChange={(e) => setLastName(e.target.value)} />
-              <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" required onChange={(e) => setEmail(e.target.value)} />
-              <textarea rows="4" className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " placeholder="Message" required onChange={(e) => setMessage(e.target.value)}>
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="First Name*" required onChange={(e) => setFirstName(e.target.value)} />
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Last Name*" required onChange={(e) => setLastName(e.target.value)} />
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Email Address*" required onChange={(e) => setEmail(e.target.value)} />
+              <textarea rows="4" className=" shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" placeholder="Message" required onChange={(e) => setMessage(e.target.value)}>
               </textarea>
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] bg-[#fff]" type="file" id="myfile" name="myfile" />
               <div className=" w-full">
-                <button type="submit" className="shadow-[0_0_30px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
+                <button type="submit" className="shadow-[0_0_6px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
               </div>
             </form>
           </div>
         </div>
 
-        <div className="w-full md:w-[50%] mb-[30px] mb-0 pl-0 md:pl-[10px]">
+        <div className="w-full md:w-[50%] mb-[30px] mb-0 pl-0 md:pl-[3%]">
 
           <div className="w-full flex justify-center">
             <Image src={vector} className='' />
-            </div>
+          </div>
           <div className='mt-[50px] hidden md:block'>
-            <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px]'> Apply Now</h5>
-            <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[10px]"
+            <h5 className='fgb text-[#555555] text-[14px] md:text-[28px] leading-[18px] leading-[36px] pb-[10px]'>Apply Now</h5>
+            <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-[23px] mt-[10px]"
               // action=""
               onSubmit={(e) => joinTeam(e)}>
-              <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="First Name*" required onChange={(e) => setFirstName(e.target.value)} />
-              <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Last Name*" required onChange={(e) => setLastName(e.target.value)} />
-              <input className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " type="text" placeholder="Email Address*" required onChange={(e) => setEmail(e.target.value)} />
-              <textarea rows="4" className=" shadow-[0_0_30px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] " placeholder="Message" required onChange={(e) => setMessage(e.target.value)}>
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="First Name*" required onChange={(e) => setFirstName(e.target.value)} />
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Last Name*" required onChange={(e) => setLastName(e.target.value)} />
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Email Address*" required onChange={(e) => setEmail(e.target.value)} />
+              <textarea rows="4" className=" shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" placeholder="Message" required onChange={(e) => setMessage(e.target.value)}>
               </textarea>
+              <input className="shadow-[0_0_6px_#00000029] p-2 md:px-[.8rem] md:py-[.5rem] w-full lg:w-[100%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px] bg-[#fff]" type="file" id="myfile" name="myfile" />
               <div className=" w-full">
-                <button type="submit" className="shadow-[0_0_30px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
+                <button type="submit" className="shadow-[0_0_6px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] w-[94px] md:w-[auto] h-[31px] md:h-[auto] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-[11px] md:px-10 py-[7px] md:py-3 ">Send</button>
               </div>
             </form>
           </div>
