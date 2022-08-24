@@ -256,6 +256,16 @@ justify-content: center;
 .slick-next, .slick-prev {
   background-color: gray !important;
 }
+@media (min-width: 1024px) {
+  .myContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .myContainer-footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 @media (max-width: 640px) {
   .myContainer {
     padding-left: 25px;

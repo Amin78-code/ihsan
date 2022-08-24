@@ -4,7 +4,7 @@ const HeadingText = () => {
   return (
     <section className="pt-[40px] md:pt-[79px] pb-[43px] md:pb-[85px]">
       <div className="myContainer text-center">
-        <h2 className="fpr mb-[17px] md:mb-[49px] text-[32px] md:text-[85px] text-[#0F2E3C] max-w-[282px] md:max-w-[940px] mx-auto leading-[32px] md:leading-[85px]">Coaching through the lens of culture</h2>
+        <h2 className="fpr mb-[17px] md:mb-[49px] text-[32px] md:text-[60px] sc1500:text-[85px] text-[#0F2E3C] max-w-[282px] md:max-w-[940px] mx-auto leading-[32px] md:leading-[60px] sc1500:leading-[85px]">Coaching through the lens of culture</h2>
         <p className="fgr text-[#292929] text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] max-w-[1297px] mx-auto">
           Being fully open and transparent with a coach or therapist is the only
           way to find the root of your problems. But that takes trust and an

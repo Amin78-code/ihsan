@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
       <div className="myContainer flex flex-col-reverse lg:flex-row relative z-[1]">
         <div className="w-full lg:w-[48%]">
-         <h1 className="fpr text-[42px] md:text-[90px] xl:text-[130px] 2xl:text-[150px] leading-[43px] md:leading-[90px] xl:leading-[120px] 2xl:leading-[140px] text-[#0F2E3C] max-w-[171px] md:max-w-[680px]">
+         <h1 className="fpr text-[42px] md:text-[75px] sc1500:text-[150px] leading-[43px] md:leading-[75px] sc1500:leading-[140px] text-[#0F2E3C] max-w-[171px] md:max-w-[680px]">
             Feel like you again
           </h1>
           <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#292929] pt-[13px] md:pt-[55px] pb-[22px] md:pb-[62px]">

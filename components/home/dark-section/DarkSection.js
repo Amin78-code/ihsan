@@ -21,9 +21,9 @@ const DarkSection = () => {
       </div>
 
       <div className="myContainer relative z-[2]">
-        <div className="px-0 md:px-[5%]">
+        <div className="px-0 sm:px-[5%] md:px-[0] xl:px-[5%]">
           <div className="flex flex-col lg:flex-row">
-            <h2 className="fpr text-[32px] md:text-[70px] text-[#fff] leading-[32px] md:leading-[70px] min-w-[100%] md:min-w-[450px]">
+            <h2 className="fpr text-[32px] md:text-[50px] sc1500:text-[70px] text-[#fff] leading-[32px] md:leading-[50px] sc1500:leading-[70px] min-w-[100%] md:min-w-[450px]">
               What makes us different?
             </h2>
             <p className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] pl-0 lg:pl-[5%] pt-[16px] lg:pt-0">
@@ -86,7 +86,7 @@ const DarkSection = () => {
               </div>
             </div>
           </div>
-          <h2 className="fpr text-[#fff] text-[32px] md:text-[85px] text-center pb-[27px] md:pb-[60px]">
+          <h2 className="fpr text-[#fff] text-[32px] md:text-[60px] sc1500:text-[85px] text-center pb-[27px] md:pb-[60px]">
             Our services
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-x-[0] md:gap-x-[5%] gap-y-[26px] md:gap-y-[50px]">
