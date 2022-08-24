@@ -38,8 +38,8 @@ const DarkSection = () => {
             </p>
           </div>
           <div className="flex flex-col lg:flex-row pt-[60px] pb-[50px] md:py-[130px] items-center lg:items-end">
-            <div className="flex">
-              <div className="mr-[20px]   sc1440:w-[auto] w-[52px] md:w-[150px] h-[53px] md:w-[auto]">
+            <div className="flex flex-[100%] lg:flex-[47%]">
+              <div className="mr-[20px]   sc1440:w-[auto] w-[52px] md:w-[150px] lg:md:w-[80px] xl:w-[150px] h-[53px] md:w-[auto]">
                 <Image src={bulb} alt="image" />
               </div>
               <div>
@@ -48,22 +48,22 @@ const DarkSection = () => {
                 </h6>
                 <ul>
                   <li className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] py-0 md:py-[6px] leading-[20px] md:leading-[28px]">
-                    <BsFillCheckCircleFill className="mt-[-3px] md:mt-0 text-[13px] md:text-[28px] text-[#fff] inline pr-[1px]" /> Action and goal-oreinted
+                    <BsFillCheckCircleFill className="mt-[-3px] md:mt-0 text-[13px] md:text-[28px] lg:text-[18px] xl:text-[28px] text-[#fff] inline pr-[1px]" /> Action and goal-oreinted
                   </li>
                   <li className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] py-0 md:py-[6px] leading-[20px] md:leading-[28px]">
-                    <BsFillCheckCircleFill className="mt-[-3px] md:mt-0 text-[13px] md:text-[28px] text-[#fff] inline pr-[1px]" /> Forward looking
+                    <BsFillCheckCircleFill className="mt-[-3px] md:mt-0 text-[13px] md:text-[28px] lg:text-[18px] xl:text-[28px] text-[#fff] inline pr-[1px]" /> Forward looking
                   </li>
                   <li className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] py-0 md:py-[6px] leading-[20px] md:leading-[28px]">
-                    <BsFillCheckCircleFill className="mt-[-3px] md:mt-0 text-[13px] md:text-[28px] text-[#fff] inline pr-[1px]" /> Tailored one-on-one approach
+                    <BsFillCheckCircleFill className="mt-[-3px] md:mt-0 text-[13px] md:text-[28px] lg:text-[18px] xl:text-[28px] text-[#fff] inline pr-[1px]" /> Tailored one-on-one approach
                   </li>
                 </ul>
               </div>
             </div>
-            <p className="fpr text-[18px] md:text-[24px] text-[#fff] py-[5px] leading-[28px] px-[4%] sc1440:px-[7%] mt-0 lg:mt-[-30px]">
+            <p className="flex-[100%] lg:flex-[6%] fpr text-[18px] md:text-[24px] text-[#fff] py-[5px] leading-[28px] px-[4%] sc1440:px-[7%] mt-0 lg:mt-[-30px]">
               vs
             </p>
-            <div className="flex">
-              <div className="mr-[20px] sc1440:w-[auto] w-[37px] md:w-[90px] h-[69px] md:w-[auto]">
+            <div className="flex flex-[100%] lg:flex-[47%]">
+              <div className="mr-[20px] sc1440:w-[auto] w-[37px] md:w-[90px] lg:md:w-[60px] xl:w-[90px] h-[69px] md:w-[auto]">
                 <Image src={clipboard} alt="image" />
               </div>
               <div>
@@ -73,13 +73,13 @@ const DarkSection = () => {
 
                 <ul>
                   <li className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] py-0 md:py-[6px] leading-[20px] md:leading-[28px]">
-                    <RiCloseCircleFill className="mt-[-3px] md:mt-0 text-[16px] md:text-[32px] text-[#fff] inline pr-[2px]" /> Analytical and introspective
+                    <RiCloseCircleFill className="mt-[-3px] md:mt-0 text-[16px] md:text-[32px] lg:text-[22px] xl:text-[32px] text-[#fff] inline pr-[2px]" /> Analytical and introspective
                   </li>
                   <li className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] py-0 md:py-[6px] leading-[20px] md:leading-[28px]">
-                    <RiCloseCircleFill className="mt-[-3px] md:mt-0 text-[16px] md:text-[32px] text-[#fff] inline pr-[2px]" /> Slow-paced and long-term
+                    <RiCloseCircleFill className="mt-[-3px] md:mt-0 text-[16px] md:text-[32px] lg:text-[22px] xl:text-[32px] text-[#fff] inline pr-[2px]" /> Slow-paced and long-term
                   </li>
                   <li className="fgr text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#fff] py-0 md:py-[6px] leading-[20px] md:leading-[28px]">
-                    <RiCloseCircleFill className="mt-[-3px] md:mt-0 text-[16px] md:text-[32px] text-[#fff] inline pr-[2px]" /> Focus more on the past to
+                    <RiCloseCircleFill className="mt-[-3px] md:mt-0 text-[16px] md:text-[32px] lg:text-[22px] xl:text-[32px] text-[#fff] inline pr-[2px]" /> Focus more on the past to
                     <br /> resolve current challenges
                   </li>
                 </ul>

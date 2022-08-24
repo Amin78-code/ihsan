@@ -17,9 +17,9 @@ const Hero = () => {
       </div>
       <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#f2f2f2] opacity-[.99]'>
       </div>
-      <div className="myContainer flex flex-col-reverse md:flex-row relative z-[1]">
-        <div className="w-full md:w-[48%]">
-         <h1 className="fpr text-[42px] md:text-[130px] 2xl:text-[150px] leading-[43px] md:leading-[120px] 2xl:leading-[140px] text-[#0F2E3C] max-w-[171px] md:max-w-[680px]">
+      <div className="myContainer flex flex-col-reverse lg:flex-row relative z-[1]">
+        <div className="w-full lg:w-[48%]">
+         <h1 className="fpr text-[42px] md:text-[90px] xl:text-[130px] 2xl:text-[150px] leading-[43px] md:leading-[90px] xl:leading-[120px] 2xl:leading-[140px] text-[#0F2E3C] max-w-[171px] md:max-w-[680px]">
             Feel like you again
           </h1>
           <p className="text-[12px] md:text-[24px] leading-[16px] md:leading-[36px] text-[#292929] pt-[13px] md:pt-[55px] pb-[22px] md:pb-[62px]">
