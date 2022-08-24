@@ -173,15 +173,7 @@ function SamplePrevArrow(props) {
             <div className=" w-[30%] image_container flex justify-center items-center bg-[#1826570D] ">
               <Image src={Image3} alt="Program3"  />
             </div>
-              
-            {/* <div className="w-[30%]">
-              <div className="image_container flex justify-center items-center bg-[#1826570D] ">
-                <Image src={Image3} alt="Program3"  />
-              </div>
-            </div> */}
-             
-              
-              
+                
            {/* </Slider> */}
         </div>
       </div>

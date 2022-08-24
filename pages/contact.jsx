@@ -23,7 +23,7 @@ export default function Contact() {
     <Layout>
 <section className="relative overflow-hidden">
 <div className='absolute left-0 right-0 top-0 w-full h-[100%]'>
-        <div className='scale-[1.1]'><Image src={pattern} className='' /></div>
+        <div className='scale-[1.1]'><Image src={pattern} /></div>
       </div>
       <div className='absolute left-0 right-0 top-0 w-full h-[100%] linear-gradient-1'>
       </div>
