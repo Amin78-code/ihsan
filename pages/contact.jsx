@@ -47,7 +47,7 @@ export default function Contact() {
                 <input className="shadow-[0_0_6px_#00000029] p-2 md:p-4 h-[32px] md:h-[50px] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Last Name*" required onChange={(e) => setLastName(e.target.value)} />
                 <input className="shadow-[0_0_6px_#00000029] p-2 md:p-4 h-[32px] md:h-[50px] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Email Address*" required onChange={(e) => setEmail(e.target.value)} />
                 <input className="shadow-[0_0_6px_#00000029] p-2 md:p-4 h-[32px] md:h-[50px] w-full lg:w-[49%] rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" type="text" placeholder="Phone Number*" required onChange={(e) => setPhone(e.target.value)} />
-                <textarea rows={3} className="shadow-[0_0_6px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" placeholder="Message" placeholder="Message" required onChange={(e) => setMessage(e.target.value)} />
+                <textarea rows={3} className="shadow-[0_0_6px_#00000029] p-2 md:p-4 w-full rounded-[7px] md:rounded-[18px] text-[12px] md:text-[20px] lg:text-[24px]" placeholder="Message" required onChange={(e) => setMessage(e.target.value)} />
                 <div className=" w-full">
                   <button type="submit" className="shadow-[0_0_6px_#00000029] rounded-[40px] float-right bg-[#AE8B5C] text-[#fff] text-[12px] md:text-[20px] lg:text-[24px] font-bold px-10 py-3 ">Send</button>
                 </div>
