@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import heroimg from '../../assets/images/home/hero.jpg'
 import pattern from '../../../assets/images/pattern.png';
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import hands from '../../../assets/images/services/hands.svg';
@@ -26,7 +25,7 @@ const Content = ({ data, pb }) => {
 
 
       </div>
-      <div className="myContainer flex flex-col xl:flex-row justify-end relative pb-[3%]">
+      <div className="myContainer flex flex-col xl:flex-row justify-end relative">
 
       
         <div className="w-full xl:w-[100%] pt-[97%] md:pt-[680px] xl:pt-0">
@@ -45,3 +44,4 @@ const Content = ({ data, pb }) => {
 };
 
 export default Content;
+
